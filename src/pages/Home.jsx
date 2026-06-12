@@ -15,7 +15,7 @@ function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchProducts = async () => { 
       try {
         setLoading(true);
         const response = await fetch("https://fakestoreapi.com/products");
